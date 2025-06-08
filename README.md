@@ -1,59 +1,113 @@
-# README: Combining Linking Techniques Framework
+# 🔗 Linking with Bias: Domain-Specific Behaviour in Entity Linking Systems
 
-## Overview
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15620484.svg)](https://doi.org/10.5281/zenodo.15620484)
 
-This repository contains all relevant experiments and evaluations, the notebook you are probably looking for is
-- **Main Notebook:** `evaluate_all_classes.ipynb`
-
-## Datasets
-
-The datasets used in these experiments can be downloaded from the following link:
-
-- **[Download Datasets](#)** (LINK WILL BE PROVIDED SOON)
-
-Don't forget to set the path to the original datasets in the `constants.py` file under the `file_paths` list. 
-
-## Configuration
-
-### 1. Dataset Paths
-In the `constants.py` file, you need to set the paths for both the original datasets and the Combining Linking Techniqes framework outputs:
-- **Path to original datasets:** Set in `file_paths`
-- **Path to CLiT output (JSON files):** Set in `json_paths`
-
-### 2. Topic Training
-To train topics, you need to uncomment the corresponding cells in the notebook. The training cell relies on `nltk` for stopword removal.
-
-```python
-# import nltk
-# nltk.download('stopwords')
-
-# def remove_stopwords(text):
-#     stopwords = nltk.corpus.stopwords.words('english')
-#     text = [word for word in text if word not in stopwords]
-#     return text
-# def tok(text):
-#     import gensim
-#     text = gensim.utils.simple_preprocess(text)
-#     text = remove_stopwords(text)
-#     return text
-# topic_model = Top2Vec(
-#     doc_values,
-#     embedding_model="universal-sentence-encoder",
-#     speed="deep-learn",
-#     tokenizer=tok,
-#     ngram_vocab=True,
-#     ngram_vocab_args={"connector_words": "phrases.ENGLISH_CONNECTOR_WORDS"},
-# )
-```
-
-### 3. PCA Datasets
-The PCA datasets are generated dynamically during the notebook execution and do not need to be pre-downloaded.
-
-## Model Training
-
-The notebook is pre-configured to save trained models as pickle files to avoid retraining every time. However, to build models from scratch, you will need to:
-
-- **Uncomment the model-building cells** in the notebook.
-- **Note:** Training the entire notebook from scratch can take up to an hour. We recommend saving models as pickle files after training for future use, code for that is also included.
+Welcome to the official repository for the paper **"Linking with Bias"**. This project investigates the **systemic domain bias** present in modern **entity linking (EL)** systems and introduces benchmark resources to measure and mitigate such biases.
 
 ---
+
+## 🧠 Summary
+
+Entity linking systems are widely adopted in knowledge-driven NLP applications, but they are often trained and evaluated on narrow, homogeneous domains. Our work reveals how these systems perform inconsistently across different domains, exposing a **domain bias** that hinders fairness and generalizability.
+
+We contribute:
+
+- **📊 A comprehensive analysis** of domain bias in EL systems.
+- **🧾 DOMiNO**, a new benchmark dataset *balanced across 37 domains*.
+- **🗂️ DOMeX**, a resource linking existing EL datasets to explicit domain labels.
+- **🧪 Novel dataset variants** (ACE2004N, AIDAN, etc.) with novel mentions (and anonymized triples) to isolate bias factors.
+- **📦 All datasets provided in NIF format** for interoperability and benchmarking.
+- **🧪 Dataset preparation and evaluation scripts**
+
+---
+
+## 🧾 Citing the Paper
+
+> 📄 **Linking with Bias: Proving Domain Bias in Entity Linking Systems**  
+> _Authors: [Redacted for Review]_  
+> 📚 Conference/Journal: [SEMANTICS2025]  
+> 🔗 [Link to paper not yet available]
+
+---
+
+## 📂 Repository Structure
+
+```bash
+linking-with-bias/
+├── data/              # Scripts to download and parse datasets
+├── evaluation/        # Bias quantification tools and metrics
+├── models/            # Wrappers for tested EL systems
+├── notebooks/         # Interactive analysis and visualizations
+├── results/           # Output from evaluations
+└── README.md          # This file
+```
+
+## 📦 Datasets
+
+All datasets are released under open-access licenses and available on Zenodo in NIF (NLP Interchange Format). Use these datasets to replicate, extend, or benchmark your own entity linking systems.
+🧬 DOMiNO: Domain-Balanced EL Benchmark
+
+A novel dataset containing documents balanced across 37 domains, with and without nif:topic annotations to enable domain-specific evaluation.
+
+    📁 Zenodo: https://zenodo.org/records/15620484
+
+    🔍 Includes: domain lookup, bias evaluation-ready annotations
+
+    📄 Format: RDF/NIF
+	
+
+
+## 🗂️ DOMeX: Domain Metadata for EL Datasets
+
+Provides domain mappings for several existing entity linking datasets to support bias analysis.
+
+    📁 DOMeX Dataset: https://zenodo.org/records/15620537
+
+    📁 Domain-Split Documents: https://zenodo.org/records/15620503
+
+## 🧪 Novel Anonymized Datasets
+
+Anonymized versions of popular EL datasets with altered mentions (preserving domain and document semantics) for controlled bias studies.
+### 🧪 Novel Anonymized Datasets
+
+Anonymized versions of popular EL datasets with **altered mentions** (preserving domain and document semantics) for controlled bias studies.
+
+| Dataset Name | Original     | Description         | Zenodo Link                                                   |
+|--------------|--------------|---------------------|----------------------------------------------------------------|
+| ACE2004N     | ACE2004      | Anonymized variant  | [🔗 Link](https://zenodo.org/records/15620518)                |
+| AIDAN        | AIDA-CoNLL   | Anonymized variant  | [🔗 Link](https://zenodo.org/records/15620518)                |
+| AQUAINTN     | AQUAINT      | Anonymized variant  | [🔗 Link](https://zenodo.org/records/15620518)                |
+| MSNBCN       | MSNBC        | Anonymized variant  | [🔗 Link](https://zenodo.org/records/15620518)                |
+## 🚀 Getting Started
+
+Clone this repository and install the dependencies:
+
+ git clone https://github.com/yourusername/linking-with-bias.git
+ cd linking-with-bias
+ pip install -r requirements.txt
+
+Download the datasets from Zenodo and place them in the data/ directory as per the instructions in data/README.md.
+## 📈 Evaluation Framework
+
+Use our modular pipeline to:
+
+    * Load NIF datasets via NIF
+
+    * Interface with existing EL models
+
+    * Measure and visualize domain bias
+
+    * Run cross-domain evaluations
+
+
+## 🤝 Contributing
+
+We welcome contributions! Please open an issue or pull request for feedback, improvements, or adding new EL models.
+
+## 📬 Contact
+
+For questions, please contact:
+📧 [**Anonymised for now**]
+## 📝 License
+
+This project is released under the MIT License. Datasets are shared under their respective Zenodo licensing terms.
