@@ -23,7 +23,7 @@ We contribute:
 
 ## 🧾 Citing the Paper
 
-> 📄 **Linking with Bias: Proving Domain Bias in Entity Linking Systems**  
+> 📄 **Linking with Bias: Domain-Specific Behaviour in Entity Linking Systems**  
 > _Authors: [Redacted for Review]_  
 > 📚 Conference/Journal: [SEMANTICS2025]  
 > 🔗 [Link to paper not yet available]
