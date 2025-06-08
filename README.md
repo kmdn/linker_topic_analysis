@@ -70,17 +70,14 @@ Anonymized versions of popular EL datasets with **altered mentions** (preserving
 
 ## 🚀 Getting Started
 
-Clone this repository and install the dependencies:
-
- git clone https://github.com/<ANONYMISED>
- cd linking-with-bias
- pip install -r requirements.txt
-
 Download the datasets from Zenodo and place them in the defined directory as defined in constants.py
+
+Then you may run the notebooks to reproduce our analyses.
+
 
 ## 📈 Evaluation Framework
 
-Use our modular pipeline to:
+Use our pipeline to:
 
     * Measure and visualize domain bias
     * Interface with existing EL models
