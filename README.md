@@ -30,8 +30,11 @@ We contribute:
 ## 🧾 Citing the Paper
 
 > 📄 **Linking with Bias: Domain-Specific Behaviour in Entity Linking Systems**  
+
 > _Authors: Kristian Noullet, Ayoub Ourgani, Niklas Lakner, Tobias Käfer_
+
 > 📚 Conference: [SEMANTICS2025]  
+
 > 🔗 [Link to paper not yet available]
 
 ---
