@@ -8,7 +8,7 @@
 
 [![Benchmark Collection (anonymised)](https://zenodo.org/badge/DOI/10.5281/zenodo.15620518.svg)](https://doi.org/10.5281/zenodo.15620518) Benchmark Collection (anonymised)
 
-Welcome to the official repository for the paper **"Linking with Bias"**. This project investigates the **systemic domain bias** present in modern **entity linking (EL)** systems and introduces benchmark resources to measure and mitigate such biases.
+Welcome to the official repository for the paper **"Linking with Bias: Domain-Specific Behaviour in Entity Linking Systems"**. This project investigates the **systemic domain bias** present in modern **entity linking (EL)** systems and introduces benchmark resources to measure and potentially mitigate such biases.
 
 ---
 
@@ -30,8 +30,8 @@ We contribute:
 ## 🧾 Citing the Paper
 
 > 📄 **Linking with Bias: Domain-Specific Behaviour in Entity Linking Systems**  
-> _Authors: [Redacted for Review]_  
-> 📚 Conference/Journal: [SEMANTICS2025]  
+> _Authors: Kristian Noullet, Ayoub Ourgani, Niklas Lakner, Tobias Käfer_
+> 📚 Conference: [SEMANTICS2025]  
 > 🔗 [Link to paper not yet available]
 
 ---
