@@ -96,4 +96,6 @@ bt = DocumentBertTokenizer(bertLoader.tokenizer, bertLoader.model)
 
 docs_list = [file_path + "_labeled_.json" for file_path in constants.file_paths]
 for doc in docs_list:
-    bt.saveDocEmbeddings(doc)
+    print("Processing: ", doc)
+    break
+    #bt.saveDocEmbeddings(doc)
