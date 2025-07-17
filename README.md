@@ -1,8 +1,11 @@
 # 🔗 Linking with Bias: Domain-Specific Behaviour in Entity Linking Systems
 
 [DOMiNO (anonymised):![DOMiNO (anonymised)](https://zenodo.org/badge/DOI/10.5281/zenodo.15620484.svg)](https://doi.org/10.5281/zenodo.15620484)
+
 [DOMeX (anonymised):![DOMeX (anonymised)](https://zenodo.org/badge/DOI/10.5281/zenodo.15620537.svg)](https://doi.org/10.5281/zenodo.15620537)
+
 Domain-Split Collection (anonymised):[![Domain-Split Collection (anonymised)](https://zenodo.org/badge/DOI/10.5281/zenodo.15620503.svg)](https://doi.org/10.5281/zenodo.15620503)
+
 [![Benchmark Collection (anonymised)](https://zenodo.org/badge/DOI/10.5281/zenodo.15620518.svg)](https://doi.org/10.5281/zenodo.15620518)
 
 Welcome to the official repository for the paper **"Linking with Bias"**. This project investigates the **systemic domain bias** present in modern **entity linking (EL)** systems and introduces benchmark resources to measure and mitigate such biases.
