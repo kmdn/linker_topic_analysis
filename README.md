@@ -1,6 +1,6 @@
 # 🔗 Linking with Bias: Domain-Specific Behaviour in Entity Linking Systems
 
-[[DOMiNO (anonymised)]!(https://zenodo.org/badge/DOI/10.5281/zenodo.15620484.svg)](https://doi.org/10.5281/zenodo.15620484)
+[[DOMiNO (anonymised)]![DOMiNO (anonymised)](https://zenodo.org/badge/DOI/10.5281/zenodo.15620484.svg)](https://doi.org/10.5281/zenodo.15620484)
 [![DOMeX (anonymised)](https://zenodo.org/badge/DOI/10.5281/zenodo.15620537.svg)](https://doi.org/10.5281/zenodo.15620537)
 [![Domain-Split Collection (anonymised)](https://zenodo.org/badge/DOI/10.5281/zenodo.15620503.svg)](https://doi.org/10.5281/zenodo.15620503)
 [![Benchmark Collection (anonymised)](https://zenodo.org/badge/DOI/10.5281/zenodo.15620518.svg)](https://doi.org/10.5281/zenodo.15620518)
