@@ -1,6 +1,5 @@
 venv
 .env
-data
 __pycache__
 sentiment_classification
 saved_model
