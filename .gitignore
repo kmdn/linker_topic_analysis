@@ -7,4 +7,3 @@ model
 .deepseek_api_key.txt
 *.pickle
 *.json
-*.pdf
